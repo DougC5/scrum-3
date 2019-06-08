@@ -9,7 +9,6 @@ function member(firstName, lastName, age, membership, price) {
     this.price = price;
     this.dues = 'Not Paid';
 
-    console.log('Cool Man');
 }
 
 function registerMember() {
@@ -56,3 +55,11 @@ function getMembership() {
     }
     return membership;
 } 
+
+function deleteUser(index){
+    console.log('Admin wants to delete a user at index: ', index);
+    members.splice(index, 1);
+    buildUserList(members); 
+
+
+}
