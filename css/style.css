@@ -1,0 +1,32 @@
+.header {
+    background-image: url(https://s3.amazonaws.com/zenplannerwordpress-stack0/wp-content/uploads/sites/119/2018/07/25103801/Gym-Background-Final.jpg);
+}
+h1 {
+    color: white;
+    text-align: center
+}
+h3 {
+    color: white;
+    text-align: center
+}
+
+form{
+    color: white;
+}
+
+#txtPassword{
+    
+}
+
+.notPaid{
+    color: red;
+}
+
+.paid{
+    color: green;
+}
+
+.checkedIn{
+    display: none;
+    color: green;
+}
