@@ -8,6 +8,10 @@ function member(firstName, lastName, age, membership, price) {
     this.membership = membership;
     this.price = price;
     this.dues = 'Not Paid';
+    this.duesClass = "card-text notPaid";
+    this.checkedClass = "card-text checkedIn";
+    this.checkInButton = "Check In";
+    this.checkInButtonClass = "btn btn-success";
 
 }
 
@@ -62,4 +66,32 @@ function deleteUser(index){
     buildUserList(members); 
 
 
+}
+
+function payDues(i){
+
+    console.log('i is: ' + i);
+
+    members[i].dues = 'Current';
+    members[i].duesClass = 'card-text';
+    buildUserList(members);
+
+}
+
+function checkIn(i){
+    console.log('i for CHECK IN is: ' + i);
+
+    members[i].checkedClass = "card-text";
+    members[i].checkInButtonClass = "btn btn-warning";
+    members[i].checkInButton = "Check Out";
+    buildUserList(members);
+}
+
+function checkOut(i){
+    console.log('i for CHECK Out is: ' + i);
+
+    members[i].checkedClass = "card-text checkedIn";
+    members[i].checkInButtonClass = "btn btn-success";
+    members[i].checkInButton = "Check In";
+    buildUserList(members); 
 }
